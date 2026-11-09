@@ -13,7 +13,7 @@
 <!-- NAV -->
 <nav id="navbar">
   <div class="nav-logo">
-    <img src="logo.png" alt="Al Mulla Engineering Consultants" style="height:60px;width:auto;display:block;margin:0 auto 16px;">
+    <img src="logo.png" alt="Al Mulla Engineering Consultants" style="height:60px;width:auto;display:block;margin:3 auto 16px;">
     <div class ="nav-logo-text">
       <span>المُلا للاستشارات الهندسية</span>
       <span>AL MULLA ENG. CONSULTANTS</span>
@@ -257,7 +257,7 @@
         <div class="svc-tags">
           <span class="svc-tag">سكني</span>
           <span class="svc-tag">تجاري</span>
-          <span class="svc-tag">تسويقي</span>
+          <!-- <span class="svc-tag">تسويقي</span> -->
         </div>
       </div>
       <div class="svc-visual">
@@ -441,64 +441,143 @@
   <div class="projects-intro">
     <div class="section-tag">مشاريعنا</div>
     <h2 class="section-h2">أعمالنا <em>Our Projects</em></h2>
-    <p class="section-lead">مشاريع متنوعة تعكس خبرتنا الواسعة في مختلف القطاعات الهندسية والمعمارية.</p>
+    <p class="section-lead">مشاريع حقيقية منفذة تعكس خبرتنا الواسعة في مختلف القطاعات الهندسية والمعمارية.</p>
   </div>
+
   <div class="projects-filter">
     <button class="filter-btn active" onclick="filterProjects('all', this)">الكل</button>
     <button class="filter-btn" onclick="filterProjects('residential', this)">سكني</button>
     <button class="filter-btn" onclick="filterProjects('commercial', this)">تجاري</button>
+    <button class="filter-btn" onclick="filterProjects('government', this)">حكومي</button>
     <button class="filter-btn" onclick="filterProjects('interior', this)">تصميم داخلي</button>
-    <button class="filter-btn" onclick="filterProjects('mega', this)">مشاريع كبرى</button>
   </div>
+
   <div class="projects-grid" id="projects-grid">
-    <div class="project-card" data-cat="commercial">
-      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80" alt="مشروع تجاري">
-      <span class="project-label">تجاري</span>
+
+    <!-- سكني -->
+    <div class="project-card" data-cat="residential">
+      <img src="images/proj-new beach.jpg" alt="مجمع سكني الخبر">
+      <span class="project-label">سكني</span>
       <div class="project-overlay">
-        <div class="project-cat">Commercial</div>
-        <div class="project-name">مشروع تجاري — الدمام</div>
+        <div class="project-cat">Residential · Building</div>
+        <div class="project-name">مشروع مقترح إسكان - القطيف (تاروت نيوبيتش)</div>
+        <!-- <div class="project-desc">دور أرضي + 3 طوابق · 43 وحدة · 12,700 م²</div> -->
       </div>
     </div>
+
     <div class="project-card" data-cat="residential">
-      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80" alt="فيلا سكنية">
-      <span class="project-label">فيلا خاصة</span>
+      <img src="images/proj-villa-khobar.jpg" alt="فيلا الخبر">
+      <span class="project-label">فيلا سكنية</span>
       <div class="project-overlay">
         <div class="project-cat">Residential · Villa</div>
-        <div class="project-name">فيلا خاصة — المنطقة الشرقية</div>
+        <div class="project-name">فيلا سكنية — الخبر</div>
+        <!-- <div class="project-desc">أرضي 335م² · أول 350م² · ملحق 150م²</div> -->
       </div>
     </div>
+
+    <!-- <div class="project-card" data-cat="residential">
+      <img src="images/proj-villa-qatif.jpg" alt="فيلا القطيف">
+      <span class="project-label">فيلا سكنية</span>
+      <div class="project-overlay">
+        <div class="project-cat">Residential · Villa</div>
+        <div class="project-name">فيلا سكنية — القطيف</div>
+        <div class="project-desc">أرضي 280م² · أول 310م² · ملحق 150م²</div>
+      </div>
+    </div> -->
+
     <div class="project-card" data-cat="residential">
-      <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80" alt="دوبلكس">
+      <img src="images/proj-dammam_villa.png" alt="فيلا الدمام">
+      <span class="project-label">فيلا سكنية</span>
+      <div class="project-overlay">
+        <div class="project-cat">Residential · Villa</div>
+        <div class="project-name">فيلا سكنية — الدمام</div>
+        <!-- <div class="project-desc">أرضي 400م² · أول 430م² · ملحق 200م²</div> -->
+      </div>
+    </div>
+
+    <div class="project-card" data-cat="residential">
+      <img src="images/proj-hospital-suhaimi.jpg" alt="دوبلكس سيهات">
       <span class="project-label">دوبلكس</span>
       <div class="project-overlay">
         <div class="project-cat">Residential · Duplex</div>
-        <div class="project-name">دوبلكس — القطيف</div>
+        <div class="project-name">دوبلكسات سكنية — سيهات</div>
+        <!-- <div class="project-desc">أرضي 210م² · أول 225م² · ملحق 100م²</div> -->
       </div>
     </div>
-    <div class="project-card" data-cat="interior">
-      <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&q=80" alt="تصميم داخلي">
-      <span class="project-label">داخلي</span>
+
+    <div class="project-card" data-cat="residential">
+      <img src="images/proj-duplex-sihat.jpg" alt="دوبلكس القطيف">
+      <span class="project-label">دوبلكس</span>
       <div class="project-overlay">
-        <div class="project-cat">Interior Design</div>
-        <div class="project-name">تصميم داخلي — صفوى</div>
+        <div class="project-cat">Residential · Duplex</div>
+        <div class="project-name">دوبلكسات سكنية — القطيف</div>
+        <!-- <div class="project-desc">أرضي 185م² · أول 200م² · ملحق 100م²</div> -->
       </div>
     </div>
-    <div class="project-card" data-cat="mega">
-      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="مشروع كبير">
-      <span class="project-label">مشروع كبير</span>
-      <div class="project-overlay">
-        <div class="project-cat">Mega Project</div>
-        <div class="project-name">مستودعات ميناء الملك عبد العزيز — الدمام</div>
-      </div>
-    </div>
+
+    <!-- تجاري -->
     <div class="project-card" data-cat="commercial">
-      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80" alt="تخطيط عمراني">
-      <span class="project-label">تخطيط عمراني</span>
+      <img src="images/proj-villa-dammam.jpg" alt="برج تجاري الدمام">
+      <span class="project-label">تجاري إداري</span>
       <div class="project-overlay">
-        <div class="project-cat">Urban Planning</div>
-        <div class="project-name">التخطيط العمراني</div>
+        <div class="project-cat">Commercial · Tower</div>
+        <div class="project-name">برج تجاري إداري — الدمام</div>
+        <!-- <div class="project-desc">3 مواقف + 3 تجاري + 12 إداري = 18 دور</div> -->
       </div>
     </div>
+
+    <div class="project-card" data-cat="commercial">
+      <img src="images/proj-tower-dammam.jpg" alt="مجمع تجاري">
+      <span class="project-label">مجمع تجاري</span>
+      <div class="project-overlay">
+        <div class="project-cat">Commercial · Mall</div>
+        <div class="project-name">مجمع تجاري — الدمام</div>
+        <!-- <div class="project-desc">19 وحدة تجارية · 7,200 م²</div> -->
+      </div>
+    </div>
+
+    <div class="project-card" data-cat="commercial">
+      <img src="images/proj-complex-khobar.jpg" alt="مقهى ومطعم">
+      <span class="project-label">مقهى ومطعم</span>
+      <div class="project-overlay">
+        <div class="project-cat">Commercial · F&B</div>
+        <div class="project-name">مقهى ومطعم — غرب الدمام</div>
+        <!-- <div class="project-desc">أرضي 560م² · أول 600م² · ملحق 100م²</div> -->
+      </div>
+    </div>
+
+    <!-- حكومي -->
+    <div class="project-card" data-cat="government">
+      <img src="images/proj-duplex-qatif.jpg" alt="مبنى مكافحة المخدرات">
+      <span class="project-label">حكومي</span>
+      <div class="project-overlay">
+        <div class="project-cat">Government · Public Building</div>
+        <div class="project-name">مبنى مكافحة المخدرات — الدمام</div>
+        <!-- <div class="project-desc">مسرح 200 شخص · قاعات اجتماعات · 10,499 م²</div> -->
+      </div>
+    </div>
+
+    <div class="project-card" data-cat="government">
+      <img src="images/proj-mall-dammam.jpg" alt="مستشفى السحيمي">
+      <span class="project-label">صحي</span>
+      <div class="project-overlay">
+        <div class="project-cat">Government · Healthcare</div>
+        <div class="project-name">مستشفى السحيمي للتوحد — الدمام</div>
+        <!-- <div class="project-desc">8 طوابق · 18 عيادة · 3,920 م²</div> -->
+      </div>
+    </div>
+
+    <!-- تصميم داخلي -->
+    <div class="project-card project-card--empty" data-cat="interior">
+      <div class="project-no-img">🎨</div>
+      <span class="project-label">قريباً</span>
+      <div class="project-overlay">
+        <div class="project-cat">Interior Design · Coming Soon</div>
+        <div class="project-name">مشاريع التصميم الداخلي</div>
+        <div class="project-desc">سيتم إضافة المشاريع قريباً</div>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -560,7 +639,7 @@
       <h2 class="section-h2">ابدأ <em>مشروعك</em></h2>
       <p class="section-lead">يسعدنا التواصل معكم ومناقشة احتياجاتكم الهندسية. فروعنا في خدمتكم.</p>
 
-      <div class="branch" style="margin-top:40px;">
+      <!-- <div class="branch" style="margin-top:40px;">
         <div class="branch-name">فرع القطيف</div>
         <div class="contact-row">
           <span class="contact-row-label">العنوان</span>
@@ -578,7 +657,7 @@
           <span class="contact-row-label">جوال</span>
           <span dir="ltr">(+966) 54 108 7002</span>
         </div>
-      </div>
+      </div> -->
 
       <div class="branch">
         <div class="branch-name">فرع صفوى</div>
