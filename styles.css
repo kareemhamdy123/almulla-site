@@ -153,7 +153,7 @@ nav {
   position: absolute; inset: 0;
   background:
     linear-gradient(to right, var(--navy) 0%, transparent 40%),
-    url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=80') center/cover no-repeat;
+    url('images/proj-main2.jpeg') center/cover no-repeat;
 }
 .hero-geo {
   position: absolute; inset: 0;
