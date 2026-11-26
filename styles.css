@@ -623,9 +623,16 @@ footer {
   .nav-logo { gap: 8px; }
 
   nav.open .nav-links {
-    display: flex; flex-direction: column;
-    position: fixed; top: 64px; inset-inline: 0; bottom: 0;
-    background: var(--navy); padding: 32px 5%; gap: 24px; z-index: 99;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 64px;
+    inset-inline: 0;
+    bottom: 0;
+    background: var(--navy);
+    padding: 32px 5%;
+    gap: 24px;
+    z-index: 99;
     overflow-y: auto;
   }
   nav.open .nav-links a { font-size: 1.1rem; }
